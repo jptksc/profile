@@ -1,0 +1,113 @@
+
+/***********************************************************************************
+The Profile
+************************************************************************************/
+
+@media (max-width: 980px) {
+	#profile {
+	    width: 12.5%;
+
+	    right: 6.25%;
+	}
+}
+
+@media (max-width: 480px) {
+	#profile .social {
+	    background-size: 15px;
+
+	    width: 100%;
+	    height: 40px;
+
+	    float: left;
+
+	    opacity: 0.5;
+	}
+}
+
+/***********************************************************************************
+Universal Content Containers
+************************************************************************************/
+
+@media (max-width: 480px) {
+	section.full .close {
+	    top: 20px;
+	    right: 20px;
+	}
+}
+
+/***********************************************************************************
+Section Content
+************************************************************************************/
+
+@media (max-width: 480px) {
+	section .content {
+	    padding: 24.5% 0;
+	}
+}
+
+/***********************************************************************************
+Section Nav
+************************************************************************************/
+
+@media (max-width: 480px) {
+	section .content nav {
+	    margin-bottom: 25px;
+	}
+
+	section .content nav a {
+	    font-size: 12px;
+	}
+}
+
+/***********************************************************************************
+Section Typography
+************************************************************************************/
+
+@media (max-width: 480px) {
+	section .content h1,
+	section .content h2 {
+	    font-size: 34px;
+	    letter-spacing: -2px;
+
+	    margin-bottom: 22px;
+	}
+
+	section .content p {
+	    font-size: 12px;
+
+	    margin-bottom: 34px;
+	}
+}
+
+/***********************************************************************************
+Section Forms
+************************************************************************************/
+
+@media (max-width: 640px) {
+	section .content input[type='text'],
+	section .content input[type='email'] {
+	    font-size: 34px;
+	}
+}
+
+@media (max-width: 440px) {
+	section .content input[type='text'],
+	section .content input[type='email'] {
+	    font-size: 24px;
+	}
+}
+
+/***********************************************************************************
+Section Buttons
+************************************************************************************/
+
+@media (max-width: 480px) {
+	section .content .button {
+	    font-size: 12px;
+	    line-height: 40px;
+
+	    height: 40px;
+
+	    padding: 0 20px;
+	}
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>Profile</title>
+        <meta name="description" content="A minimalist solution for your profile and newsletter.">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900">
+        
+        <link rel="stylesheet" type="text/css" href="assets/styles/normalize.css?version=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/styles/main.css?version=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css?version=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/styles/animations.css?version=1.0">
+        
+        <link rel="shortcut icon" href="assets/demo/favicon.png" type="image/x-icon" />
+    </head>
+    
+    <body>
+        <div class="pulldown" id="profile">
+            <div class="profile" style="background-image: url(assets/demo/header-profile.jpg);">
+            </div>
+            <a class="social twitter" href="https://twitter.com/jschuller" target="_blank"></a>
+            <a class="social instagram" href="https://www.instagram.com/atmsphrc/" target="_blank"></a>
+            <a class="social medium" href="https://medium.com/@jasonsc" target="_blank"></a>
+            <a class="social dribbble" href="https://dribbble.com/jason" target="_blank"></a>
+        </div>
+
+        <section id="copy">
+            <div class="grid">
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="content" id="intro">
+                <nav class="row">
+                    <a class="current scroll" href="#intro">Intro</a>
+                    <a href="#">Contact</a>
+                    <a class="scroll" href="#newsletter">Newsletter</a>
+                </nav>
+
+                <div class="row copy">
+                    <h1>Nice to meet you... I’m Jason Schuller, a <span>designer</span> &amp; <span>maker</span> of things for the web.</h1>
+                    <p>I’ve loved simple, elegant, minimalist design for as long as I can remember and found my own way to express that passion using the web. I’ve created <a href="http://press75.com" target="_blank">Press75</a> (est. 2008 and sold in 2014), one of the first WordPress theme shops including dozens of themes used by thousands of people and sites around the world. I’ve also made my own minimalist niche-focused concepts (2012 - 2016) including templates and solutions such as <a href="http://leeflets.com" target="_blank">Leeflets</a>, <a href="http://cinemati.co" target="_blank">Cinematico</a> and <a href="http://dropplets.com" target="_blank">Dropplets</a>. Currently, I’m designing things to come with a growing team at <a href="http://plasso.co" target="_blank">Plasso</a> where we’re making payments simple.</p>
+                </div>
+
+                <div class="row actions">
+                    <a class="button red" href="mailto:hi@jason.sc?Subject=Hello%20Jason">Send Me An Email</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark pullup" id="newsletter">
+            <div class="grid">
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="content">
+                <nav class="animated fade-up">
+                    <a class="scroll" href="#intro">Intro</a>
+                    <a href="#">Contact</a>
+                    <a class="scroll current" href="#newsletter">Newsletter</a>
+                </nav>
+
+                <div class="row copy animated fade-up">
+                    <h2>Join my private email newsletter.</h2>
+                    <p>I’m inspired by beautiful things and the people who make them. It never ceases to amaze me the creativity and passion being poured into amazing new things by talented people every single day. Get something relevant from me every Tuesday morning — articles, resources, curated lists — either created by me or other amazing makers and entrepreneurs.</p>
+                </div>
+
+                <div class="row actions">
+                    <a class="button white animated swing open" href="#subscribe">Join My Newsletter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="full closed" id="subscribe">
+            <div class="grid">
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+            </div>
+
+            <a class="close open" href="#subscribe"></a>
+
+            <span class="message"></span>
+
+            <div class="content">
+                <form class="row" id="mailchimp-form" action="assets/works/post-subscribe.php" method="post">
+                    <input type="email" name="mc-email" id="mc-email" placeholder="you@youremail.com">
+                </form>
+            </div>
+
+            <span class="instruct">Hit Enter to Submit</span>
+        </section>
+
+        <script type="text/javascript" src="assets/scripts/jquery.js"></script>
+        <script type="text/javascript" src="assets/scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,462 @@
+
+/***********************************************************************************
+Universal Typography
+************************************************************************************/
+
+@font-face {
+    font-family: gotham-bold;
+    src: url('../fonts/gotham-bold.ttf')
+}
+
+/***********************************************************************************
+The Profile
+************************************************************************************/
+
+#profile {
+    width: 6.25%;
+
+    position: absolute;
+    top: 6.25%;
+    right: 3.125%;
+    z-index: 3;
+}
+
+/* Profile: The circular profile picture. */
+
+#profile .profile {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+
+    width: 100%;
+
+    float: left;
+
+    padding-bottom: 100%;
+    margin-bottom: 12.5px;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Social: Social link layout. */
+
+#profile .social {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
+    width: 100%;
+    height: 50px;
+
+    float: left;
+
+    opacity: 0.5;
+}
+
+#profile .social:hover {
+    opacity: 1.0;
+}
+
+/* Networks: Current social network integrations. */
+
+#profile .social.twitter {
+    background-image: url(../images/icon-twitter.png);
+}
+
+#profile .social.snapchat {
+    background-image: url(../images/icon-snapchat.png);
+}
+
+#profile .social.facebook {
+    background-image: url(../images/icon-facebook.png);
+}
+
+#profile .social.instagram {
+    background-image: url(../images/icon-instagram.png);
+}
+
+#profile .social.medium {
+    background-image: url(../images/icon-medium.png);
+}
+
+#profile .social.dribbble {
+    background-image: url(../images/icon-dribbble.png);
+}
+
+#profile .social.email {
+    background-image: url(../images/icon-email.png);
+}
+
+/***********************************************************************************
+Universal Content Containers
+************************************************************************************/
+
+section {
+    background-color: rgba(255, 255, 255, 0.98);
+
+    width: 100%;
+
+    float: left;
+
+    position: relative;
+}
+
+section.full {
+    height: 100%;
+
+    float: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+section.full .close {
+    width: 22px;
+    height: 22px;
+
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 5;
+}
+
+section.full .close:hover {
+    opacity: 1;
+}
+
+section.full .close:before, 
+section.full .close:after {
+    background-color: rgba(0, 0, 0, 0.8);
+
+    width: 2px;
+    height: 23px;
+
+    position: absolute;
+    left: 15px;
+
+    content: '';
+
+    transition-duration: .25s;
+}
+
+section.full .close:hover:before, 
+section.full .close:hover:after {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+section.full .close:before {
+    transform: rotate(45deg);
+}
+
+section.full .close:after {
+    transform: rotate(-45deg);
+}
+
+section.full.closed {
+    display: none;
+}
+
+section.full.opened {
+    display: block;
+}
+
+section.full .instruct {
+    font-family: 'gotham-bold', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+section.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/***********************************************************************************
+Section Grids
+************************************************************************************/
+
+section .grid {
+    width: 100%;
+    min-height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+section .grid .line {
+    background-color: rgba(0, 0, 0, 0.05);
+
+    width: 1px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+section.dark .grid .line {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+section .grid .line:nth-child(1) {
+    left: 12.5%;
+}
+
+section .grid .line:nth-child(2) {
+    left: 25%;
+}
+
+section .grid .line:nth-child(3) {
+    left: 37.5%;
+}
+
+section .grid .line:nth-child(4) {
+    left: 50%;
+}
+
+section .grid .line:nth-child(5) {
+    left: 62.5%;
+}
+
+section .grid .line:nth-child(6) {
+    left: 75%;
+}
+
+section .grid .line:nth-child(7) {
+    left: 87.5%;
+}
+
+/***********************************************************************************
+Section Content
+************************************************************************************/
+
+section .content {
+    width: 62.5%;
+
+    float: left;
+
+    position: relative;
+    z-index: 2;
+
+    padding: 12.5% 0;
+    margin-left: 12.5%;
+}
+
+section.full .content {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 5;
+
+    transform: translateY(-50%);
+
+    margin: 0;
+}
+
+/***********************************************************************************
+Section Nav
+************************************************************************************/
+
+section .content nav {
+    margin-bottom: 37px;
+}
+
+section .content nav a {
+    font-family: 'gotham-bold', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+section.dark .content nav a {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+section .content nav a:hover,
+section .content nav a.current {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+section.dark .content nav a:hover,
+section.dark .content nav a.current {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section .content nav a:not(:last-of-type):after {
+    font-family: 'gotham-book', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.25);
+
+    content: ' / ';
+}
+
+section.dark .content nav a:not(:last-of-type):after {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/***********************************************************************************
+Section Typography
+************************************************************************************/
+
+section .content h1,
+section .content h2 {
+    font-family: 'gotham-bold', sans-serif;
+    font-size: 54px;
+    line-height: 1.3;
+    letter-spacing: -3px;
+
+    margin-bottom: 32px;
+}
+
+section .content h1,
+section .content h2,
+section .content p a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+section .content p,
+section .content a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+section.dark .content h1,
+section.dark .content h2 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section.dark .content p,
+section.dark .content a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+section .content h1 span,
+section .content h2 span {
+    color: #f3605f;
+}
+
+section .content p {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+
+    margin-bottom: 52px;
+}
+
+section.full .content p {
+    text-align: center;
+}
+
+section .content p a {
+    border-bottom: 1px solid rgba(243, 96, 95, 0.25);
+
+    font-weight: 900;
+}
+
+section.dark .content p a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+section .content p a:hover {
+    border-color: #f3605f;
+}
+
+/***********************************************************************************
+Section Forms
+************************************************************************************/
+
+section .content input[type='text'],
+section .content input[type='email'] {
+    font-family: 'gotham-bold', sans-serif;
+    font-size: 54px;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    width: 100%;
+
+    float: left;
+}
+
+/* Focus: On focus styles. */
+
+section .content input[type='text']:focus,
+section .content input[type='email']:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Placeholder: Font colors for placeholder text. */
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/***********************************************************************************
+Section Buttons
+************************************************************************************/
+
+section .content .button {
+    border-radius: 5px;
+
+    font-family: 'gotham-bold', sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    color: #ffffff;
+
+    height: 50px;
+
+    float: left;
+
+    position: relative;
+
+    padding: 0 20px;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
+
+    margin: 0 20px 1px 0;
+}
+
+section .content .button:hover {
+    color: rgba(255, 255, 255, 0.75);
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.075);
+}
+
+section .content .button.black {
+    background-color: #333333;
+}
+
+section .content .button.white {
+    background-color: #ffffff;
+
+    color: #333333;
+}
+
+section .content .button.white:hover {
+    color: rgba(51, 51, 51, 0.75);
+}
+
+section .content .button.red {
+    background-color: #f3605f;
+}
